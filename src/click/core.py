@@ -2359,7 +2359,7 @@ class Parameter:
 
         if isinstance(self.envvar, str):
             rv = os.environ.get(self.envvar)
-            
+
             if rv:
                 if isinstance(self, Option) and self.is_flag and self.flag_value:
                     return self.flag_value
